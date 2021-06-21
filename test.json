@@ -1,0 +1,123 @@
+
+  "mappings": {
+    "properties": {
+      "conLsJo": {
+        "properties": {
+          "content": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          },
+          "sort": {
+            "type": "long"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          }
+        }
+      },
+      "jun": {
+        "properties": {
+          "content": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          },
+          "sort": {
+            "type": "long"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          }
+        }
+      },
+      "sa": {
+        "properties": {
+          "content": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          },
+          "sort": {
+            "type": "long"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          }
+        }
+      },
+      "sub_title": {
+        "type": "text",
+        "fields": {
+          "data": {
+            "type": "text",
+            "analyzer": "nori"
+          }
+        }
+      },
+      "title": {
+        "type": "text",
+        "fields": {
+          "data": {
+            "type": "text",
+            "analyzer": "nori"
+          }
+        }
+      },
+      "yo": {
+        "properties": {
+          "content": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          },
+          "sort": {
+            "type": "long"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "data": {
+                "type": "text",
+                "analyzer": "nori"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

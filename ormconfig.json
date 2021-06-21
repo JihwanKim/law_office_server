@@ -1,0 +1,48 @@
+[
+  {
+    "name": "develop",
+    "type": "mariadb",
+    "host": "localhost",
+    "port": 3306,
+    "username": "lawOffice_server",
+    "password": "testpassword",
+    "database": "law_office",
+    "synchronize": true,
+    "logging": false,
+    "entities": ["src/entity/**/*.ts"],
+    "migrations": ["src/migration/**/*.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"],
+    "migrationsTableName": "migrations",
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    },
+    "extra": {
+      "connectionLimit": 5
+    }
+  },
+  {
+    "name": "test",
+    "type": "mariadb",
+    "host": "localhost",
+    "port": 3306,
+    "username": "lawoffice_test",
+    "password": "testpassword",
+    "database": "lawoffice_testdb",
+    "synchronize": true,
+    "logging": false,
+    "dropSchema": true,
+    "entities": ["src/entity/**/*.ts"],
+    "migrations": ["src/migration/**/*.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    },
+    "extra": {
+      "connectionLimit": 5
+    }
+  }
+]

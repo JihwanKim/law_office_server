@@ -1,0 +1,9 @@
+{
+  "name": "law_office_server",
+  "version": "0.1.0",
+  "description": "Law Office Server API",
+  "apidoc": {
+    "title": "LawOfficeServerDoc",
+    "url" : "https://github.com/LawTeam/law_office_server/tree/main"
+  }
+}

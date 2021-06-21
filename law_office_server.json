@@ -1,0 +1,27 @@
+{
+  "apps": [
+    {
+      "name": "law-office-server",
+      "script": "./src/app.ts",
+      "watch": ["./src"],
+      "instances": 2,
+      "exec_mode": "cluster"
+    }
+  ],
+  "deploy": {
+    "dev": {
+      "user": "develop",
+      "ref": "origin/master",
+      "repo": "git@github.com:LawTeam/law_office_server.git",
+      "path": "/home/develop/law_office_server",
+      "post-deploy": "npm install; grunt dist"
+    },
+    "production": {
+      "user": "develop",
+      "ref": "origin/master",
+      "repo": "git@github.com:LawTeam/law_office_server.git",
+      "path": "/home/develop/law_office_server",
+      "post-deploy": "npm install; grunt dist"
+    }
+  }
+}
